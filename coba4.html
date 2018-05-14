@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		body{
+			background-image: url("wood.jpg");
+		}
+		div{
+			width: 400px;
+			height: 400px;
+			background-image: url("cappucino.jpg");
+			background-size: 100%;
+			background-repeat: repeat-x;
+		}
+
+		div.relative{
+			width: 200px;
+			height: 200px;
+			background-color: red;
+			position: absolute;
+			left: 50%;
+			top: 50;
+			transition: linear 1s;
+		}
+		div.relative:hover{
+			transform: skew(-20deg, 10deg);
+		}
+
+		div.segitiga{
+			width: 0px;
+			height: 0px;
+			position: absolute;
+			border-bottom: 50px solid white;
+			border-right: 50px solid transparent;
+		}
+	}
+	</style>
+</head>
+<body>
+<div>
+	<p>Cappucino coffee is good for you</p>
+</div>
+<div class="segitiga"></div>
+</body>
+</html>
